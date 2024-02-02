@@ -18,9 +18,13 @@ public class BookController {
     public void addBook(@RequestBody Book book){
         bookService.addBook(book);
     }
-
     @GetMapping
     public List<BookEntity> getBooks(){
         return bookService.getBooks();
+    }
+
+    @DeleteMapping("/{id}")
+    public void deleteBook(@PathVariable Long id){
+        bookService.deleteBook(id);
     }
 }
