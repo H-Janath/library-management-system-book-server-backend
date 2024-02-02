@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -41,6 +42,12 @@ public class BookServiceImpl implements BookService {
         }else{
             return false;
         }
+    }
+
+    @Override
+    public Book getBookById(Long id) {
+        Optional<BookEntity> byId = bookRepository.findById(id);
+        return modelMapper.map(byId,Book.class);
     }
 
 
