@@ -46,3 +46,5 @@ w
 G.idea/sonarlint/issuestore/5/2/52476059c84c989423e422874ee16020bae66ee6,c\b\cbda167e81e8e28b4c241b70d737326e5be76702
 w
 G.idea/sonarlint/issuestore/6/0/607916c79de2ec6f23bbe68565ffedfd7272d172,3\9\39979cc07bc1a22cbcfd6159783ed537906e12a5
+R
+"src/main/resources/application.yml,a\6\a6d8b8556fee0e03112ce2bf34b8cb27a7dc9e58

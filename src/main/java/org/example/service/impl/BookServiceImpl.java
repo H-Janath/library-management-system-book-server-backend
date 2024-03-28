@@ -24,9 +24,11 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public void addBook(Book book) {
+    public Book addBook(Book book) {
         BookEntity bookEntity = modelMapper.map(book,BookEntity.class);
-        bookRepository.save(bookEntity);
+        BookEntity savedBookEntity = bookRepository.save(bookEntity);
+        Book saveBookEntity = modelMapper.map(savedBookEntity,Book.class);
+        return saveBookEntity;
     }
 
     @Override
@@ -48,6 +50,11 @@ public class BookServiceImpl implements BookService {
     public Book getBookById(Long id) {
         Optional<BookEntity> byId = bookRepository.findById(id);
         return modelMapper.map(byId,Book.class);
+    }
+
+    @Override
+    public String generateBookId() {
+        return null;
     }
 
 

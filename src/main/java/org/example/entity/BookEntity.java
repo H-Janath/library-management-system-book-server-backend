@@ -1,5 +1,4 @@
 package org.example.entity;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -20,13 +19,13 @@ public class BookEntity {
     private String title;
     private String author;
     private String category;
-    private Integer qty;
+    private int quantity;
 
-    public BookEntity(String isbn, String title, String author, String category, Integer qty) {
+    public BookEntity(String isbn, String title, String author, String category, Integer quantity) {
         this.isbn = isbn;
         this.title = title;
         this.author = author;
         this.category = category;
-        this.qty = qty;
+        this.quantity = quantity;
     }
 }

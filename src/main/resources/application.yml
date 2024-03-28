@@ -1,4 +1,5 @@
 spring:
+
   datasource:
     url: jdbc:mysql://localhost:3306/library_management
     username: root
@@ -6,4 +7,6 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
+
+

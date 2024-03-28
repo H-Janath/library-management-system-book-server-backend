@@ -6,8 +6,10 @@ import org.example.entity.BookEntity;
 import java.util.List;
 
 public interface BookService {
-    void addBook(Book book);
+    Book addBook(Book book);
     List<BookEntity> getBooks();
     boolean deleteBook(Long id);
     public Book getBookById(Long id);
+
+    String generateBookId();
 }
