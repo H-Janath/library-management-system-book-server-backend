@@ -14,6 +14,7 @@ import lombok.NoArgsConstructor;
 @Builder
 public class Book {
     private Long id;
+    private String bookId;
     @NotEmpty(message = "ISBN should not be empty")
     private String isbn;
     @NotEmpty(message = "Title should not be empty")
